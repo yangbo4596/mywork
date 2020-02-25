@@ -1,0 +1,992 @@
+
+Format: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.BF.3.3-00228
+S - IMAGE_VARIANT_STRING=JAASANAZA
+S - OEM_IMAGE_VERSION_STRING=SKY-20160318BCD
+S - Boot Config, 0x000000e1
+B -       269 - PBL, Start
+B -      3107 - bootable_media_detect_entry, Start
+B -     74723 - bootable_media_detect_success, Start
+B -     74729 - elf_loader_entry, Start
+B -     76370 - auth_hash_seg_entry, Start
+B -     76650 - auth_hash_seg_exit, Start
+B -    105710 - elf_segs_hash_verify_entry, Start
+B -    233317 - PBL, End
+B -    244213 - SBL1, Start
+B -    299479 - pm_device_init, Start
+B -    302377 - PON REASON:PM0:0x200020001 
+B -    316803 - PM_SET_VAL:Skip
+D -     18544 - pm_device_init, Delta
+B -    318084 - usb: hs_phy_nondrive_start
+B -    320982 - usb: hs_phy_nondrive_finish
+B -    324520 - boot_flash_init, Start
+D -         0 - boot_flash_init, Delta
+B -    331413 - boot_config_data_table_init, Start
+D -      4270 - boot_config_data_table_init, Delta - (0 Bytes)
+B -    341417 - CDT version:3,Platform ID:8,Major ID:1,Minor ID:0,Subtype:0
+B -    348401 - sbl1_ddr_set_params, Start
+B -    352671 - cpr_init, Start
+D -      1067 - cpr_init, Delta
+B -    357582 - Pre_DDR_clock_init, Start
+D -       213 - Pre_DDR_clock_init, Delta
+D -         0 - sbl1_ddr_set_params, Delta
+B -    370270 - gs DRAM_TestMode call here 900020 
+
+B -    373533 - gs DRAM_TestMode call here 900020 
+
+B -    378169 - gs DRAM_TestMode call here 900020 
+
+B -    382805 - gs DRAM_TestMode call here 9000ff 
+
+B -    387441 - gs DRAM_TestMode call here 900001 
+
+B -    391955 - gs DRAM_TestMode call here 900001 
+
+B -    396591 - gs DRAM_TestMode call here 900001 
+
+B -    401227 - gs DRAM_TestMode call here 900000 
+
+B -    405772 - gs DRAM_TestMode call here 900000 
+
+B -    410377 - gs DRAM_TestMode call here 900010 
+
+B -    415013 - gs DRAM_TestMode call here 900004 
+
+B -    419558 - gs DRAM_TestMode call here 8900000 
+
+B -    424255 - gs DRAM_TestMode call here 900000 
+
+B -    428891 - gs DRAM_TestMode call here 900000 
+
+B -    433435 - gs DRAM_TestMode call here 8900000 
+
+B -    438163 - gs DRAM_TestMode call here 900020 
+
+B -    442768 - gs DRAM_TestMode call here 900040 
+
+B -    447313 - gs DRAM_TestMode call here 900000 
+
+B -    451949 - gs DRAM_TestMode call here 900000 
+
+B -    456585 - gs DRAM_TestMode call here 8900000 
+
+B -    461190 - gs DRAM_TestMode call here 900020 
+
+B -    465826 - gs DRAM_TestMode call here 900080 
+
+B -    470462 - gs DRAM_TestMode call here 900000 
+
+B -    475007 - gs DRAM_TestMode call here 900000 
+
+B -    479795 - do ddr sanity test, Start
+D -       335 - do ddr sanity test, Delta
+B -    487024 - pm_driver_init, Start
+B -    492605 - charger module absent, it's by design if using external charger
+D -      7076 - pm_driver_init, Delta
+B -    504470 - DDR Training restore, Start
+B -    506544 - DDR Training restore, End
+B -    516273 - clock_init, Start
+D -       183 - clock_init, Delta
+B -    516578 - Image Load, Start
+D -     84272 - QSEE Image Loaded, Delta - (1528936 Bytes)
+B -    600880 - Image Load, Start
+D -       305 - SEC Image Loaded, Delta - (2048 Bytes)
+B -    608231 - sbl1_efs_handle_cookies, Start
+D -       579 - sbl1_efs_handle_cookies, Delta
+B -    615978 - Image Load, Start
+D -     10949 - DEVCFG Image Loaded, Delta - (32372 Bytes)
+B -    627354 - Image Load, Start
+D -     19002 - RPM Image Loaded, Delta - (168980 Bytes)
+B -    646386 - Image Load, Start
+D -     50905 - APPSBL Image Loaded, Delta - (566960 Bytes)
+B -    697321 - QSEE Execution, Start
+D -        61 - QSEE Execution, Delta
+B -    703025 - USB D+ check, Start
+B -    708118 - usb:No PMI
+D -      2287 - USB D+ check, Delta
+B -    711839 - SBL1, End
+D -    470005 - SBL1, Delta
+S - Flash Throughput, 30000 KB/s  (2302392 Bytes,  75143 us)
+S - DDR Frequency, 931 MHz
+S - Core 0 Frequency, 800 MHz
+Android Bootloader - UART_DM Initialized!!!
+[0] welcome to lk
+
+[10] platform_init()
+[10] target_init()
+[30] SDHC Running in HS400 mode
+[40] Done initialization of the card
+[40] SPMI read command failure: 			cmd_id = 1, error = 2
+[40] pm8x41_get_is_cold_boot: Warm boot
+[50] SPMI read command failure: 			cmd_id = 1, error = 2
+[50] SPMI read command failure: 			cmd_id = 1, error = 2
+[60] SPMI read command failure: 			cmd_id = 1, error = 2
+[60] SPMI read command failure: 			cmd_id = 1, error = 2
+[70] SPMI read command failure: 			cmd_id = 1, error = 2
+[70] SPMI read command failure: 			cmd_id = 1, error = 2
+[80] SPMI read command failure: 			cmd_id = 1, error = 2
+[80] SPMI read command failure: 			cmd_id = 1, error = 2
+[90] SPMI read command failure: 			cmd_id = 1, error = 2
+[90] SPMI read command failure: 			cmd_id = 1, error = 2
+[100] SPMI read command failure: 			cmd_id = 1, error = 2
+[100] SPMI read command failure: 			cmd_id = 1, error = 2
+[110] SPMI read command failure: 			cmd_id = 1, error = 2
+[110] SPMI read command failure: 			cmd_id = 1, error = 2
+[120] SPMI read command failure: 			cmd_id = 1, error = 2
+[120] Qseecom Init Done in Appsbl
+[130] secure app region addr=0x85b00000 size=0x800000[130] TZ App region notif returned with status:0 addr:85b00000 size:8388608
+[140] TZ App log region register returned with status:0 addr:8f6a8000 size:4096
+[140] Qseecom TZ Init Done in Appsbl
+[160] Loading cmnlib done
+[160] qseecom_start_app: Loading app keymaster for the first time'
+[180] <8>keymaster: "\"KEYMASTER Init \""
+[180] Waiting for the RPM to populate smd channel table
+[190] Not able to search the panel:
+[190] panel_operating_mode=0x0
+[300] ERROR: Splash image header invalid
+[350] Config MIPI_VIDEO_PANEL.
+[370] SPMI read command failure: 			cmd_id = 1, error = 2
+[370] SPMI read command failure: 			cmd_id = 1, error = 2
+[580] Turn on MIPI_VIDEO_PANEL.
+[590] Video lane tested successfully
+[620] pm8x41_get_is_cold_boot: Warm boot
+[620] Unable to locate /bootselect partition
+[620] boot_verifier: Device is in ORANGE boot state.
+[630] Device is unlocked! Skipping verification...
+[630] Loading (boot) image (21991424): start
+[710] Loading (boot) image (21991424): done
+[710] use_signed_kernel=1, is_unlocked=1, is_tampered=0.
+[710] Your device has been unlocked and can't be trusted.
+Wait for 5 seconds before proceeding
+[720] LK SEC APP Handle: 0x1
+[720] <8>keymaster: "\"cmd_id=KEYMASTER_SET_ROT\""
+[730] LK SEC APP Handle: 0x1
+[730] <8>keymaster: "\"cmd_id=KEYMASTER_GET_VERSION\""
+[740] Authentication Key not yet programmed
+[740] <8>keymaster: "\"QSEE_STOR_RPMB_NOT_PROVISIONED\""
+[750] decompressing kernel image: start
+[1310] decompressing kernel image: done
+[1340] Best match DTB tags 338/00000008/0x00000000/0/10016/0/0/0/a0fdf528/346b3
+[1340] Using pmic info 0x10016/0x0/0x0/0x0 for device 0x10016/0x0/0x0/0x0
+[1350] display kernel cmdline: mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_nt35532_1080p_video:1:none:cfg:single_dsi
+[1360] cmdline: console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 buildvariant=userdebug androidbo[1380] Updating device tree: start
+[1530] Updating device tree: done
+[1530] Turn off MIPI_VIDEO_PANEL.
+[1530] Continuous splash enabled, keeping panel alive.
+[1540] <8>keymaster: "\"cmd_id=KEYMASTER_MILESTONE_CALL\""
+[1540] Qseecom De-Init Done in Appsbl
+[1540] Channel alloc freed
+[1550] booting linux @ 0x80080000, ramdisk @ 0x83600000 (2056315), tags/device tree @ 0x83400000
+[1550] Jumping to kernel via monitor
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.18.31-ge52e75f-dirty (yangbo@server-for-yangxi20191030) (gcc version 4.9 20150123 (prerelease) (GCC) ) #3 SMP PREEMPT Fri Nov 22 10:54:24 CST 2019
+[    0.000000] CPU: AArch64 Processor [410fd034] revision 4
+[    0.000000] alternatives: enabling workaround for ARM erratum 845719
+[    0.000000] Machine: Qualcomm Technologies, Inc. [710] Loading (boot) image (21991424): done
+[710] use_signed_kernel=1, is_unlocked=1, is_tampered=0.
+[710] Your device has been unlocked and can't be trusted.
+Wait for 5 seconds before proceeding
+[720] LK SEC APP Handle: 0x1
+[730] <8>keymaster: "\"cmd_id=KEYMASTER_SET_ROT\""
+[730] LK SEC APP Handle: 0x1
+[730] <8>keymaster: "\"cmd_id=KEYMASTER_GET_VERSION\""
+[740] Authentication Key not yet programmed
+[740] <8>keymaster: "\"QSEE_STOR_RPMB_NOT_PROVISIONED\""
+[750] decompressing kernel image: start
+[1310] decompressing kernel image: done
+[1340] Best match DTB tags 338/00000008/0x00000000/0/10016/0/0/0/a0fdf528/346b3
+[1340] Using pmic info 0x10016/0x0/0x0/0x0 for device 0x10016/0x0/0x0/0x0
+[1350] display kernel cmdline: mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_nt35532_1080p_video:1:none:cfg:single_dsi
+[1360] cmdline: console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 buildvariant=userdebug androidbo[1380] Updating device tree: start
+[1520] Updating device tree: done
+[1520] Turn off MIPI_VIDEO_PANEL.
+[1530] Continuous splash enabled, keeping panel alive.
+[1530] <8>keymaster: "\"cmd_id=KEYMASTER_MILESTONE_CALL\""
+[1540] Qseecom De-Init Done in Appsbl
+[1540] Channel alloc freed
+[1550] booting linux @ 0x80080000, ramdisk @ 0x83600000 (2056315), tags/device tree @ 0x83400000
+[1550] Jumping to kernel via monitor
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.18.31-ge52e75f-dirty (yangbo@server-for-yangxi20191030) (gcc version 4.9 20150123 (prerelease) (GCC) ) #3 SMP PREEMPT Fri Nov 22 10:54:24 CST 2019
+[    0.000000] CPU: AArch64 Processor [410fd034] revision 4
+[    0.000000] alternatives: enabling workaround for ARM erratum 845719
+[    0.000000] Machine: Qualcomm Technologies, Inc. SDM450
+[    0.000000] Early serial console at I/O port 0x0 (options '')
+[    0.000000] bootconsole [uart0] enabled
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] Reserved memory: reserved region for node 'other_ext_region@0': base 0x0000000085b00000, size 13 MiB
+[    0.000000] Reserved memory: reserved region for node 'modem_region@0': base 0x0000000086c00000, size 106 MiB
+[    0.000000] Reserved memory: reserved region for node 'adsp_fw_region@0': base 0x000000008d600000, size 17 MiB
+[    0.000000] Reserved memory: reserved region for node 'wcnss_fw_region@0': base 0x000000008e700000, size 7 MiB
+[    0.000000] Reserved memory: reserved region for node 'dfps_data_mem@90000000': base 0x0000000090000000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'splash_region@0x90001000': base 0x0000000090001000, size 19 MiB
+[    0.000000] Removed memory: created DMA memory pool at 0x0000000085b00000, size 13 MiB
+[    0.000000] Reserved memory: initialized node other_ext_region@0, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x0000000086c00000, size 106 MiB
+[    0.000000] Reserved memory: initialized node modem_region@0, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008d600000, size 17 MiB
+[    0.000000] Reserved memory: initialized node adsp_fw_region@0, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x000000008e700000, size 7 MiB
+[    0.000000] Reserved memory: initialized node wcnss_fw_region@0, compatible id removed-dma-pool
+[    0.000000] Reserved memory: allocated memory for 'venus_region@0' node: base 0x000000008f800000, size 8 MiB
+[    0.000000] Reserved memory: created CMA memory pool at 0x000000008f800000, size 8 MiB
+[    0.000000] Reserved memory: initialized node venus_region@0, compatible id shared-dma-pool
+[    0.000000] Reserved memory: allocated memory for 'secure_region@0' node: base 0x00000000f6800000, size 152 MiB
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f6800000, size 152 MiB
+[    0.000000] Reserved memory: initialized node secure_region@0, compatible id shared-dma-pool
+[    0.000000] Reserved memory: allocated memory for 'qseecom_region@0' node: base 0x00000000f5800000, size 16 MiB
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f5800000, size 16 MiB
+[    0.000000] Reserved memory: initialized node qseecom_region@0, compatible id shared-dma-pool
+[    0.000000] Reserved memory: allocated memory for 'adsp_region@0' node: base 0x00000000f5400000, size 4 MiB
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f5400000, size 4 MiB
+[    0.000000] Reserved memory: initialized node adsp_region@0, compatible id shared-dma-pool
+[    0.000000] Reserved memory: allocated memory for 'gpu_region@0' node: base 0x000000008f000000, size 8 MiB
+[    0.000000] Reserved memory: created CMA memory pool at 0x000000008f000000, size 8 MiB
+[    0.000000] Reserved memory: initialized node gpu_region@0, compatible id shared-dma-pool
+[    0.000000] cma: Reserved 40 MiB at 0x00000000f2c00000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Initializing psci_cpu_init
+[    0.000000] psci: Initializing psci_cpu_init
+[    0.000000] psci: Initializing psci_cpu_init
+[    0.000000] psci: Initializing psci_cpu_init
+[    0.000000] psci: Initializing psci_cpu_init
+[    0.000000] psci: Initializing psci_cpu_init
+[    0.000000] psci: Initializing psci_cpu_init
+[    0.000000] PERCPU: Embedded 15 pages/cpu @ffffffc072680000 s22592 r8192 d30656 u61440
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 492288
+[    0.000000] Kernel command line: sched_enable_hmp=1 sched_enable_power_aware=1 console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 buildvariant=userdebug androidboot.emmc=true androidboot.verifiedbootstate=orange androidboot.veritymode=enforcing androidboot.keymaster=1 androidboot.serialno=f51ed48c androidboot.baseband=msm mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_nt35532_1080p_video:1:none:cfg:single_dsi
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.000000] Memory: 1566924K/2059264K available (14448K kernel code, 2889K rwdata, 7808K rodata, 1180K init, 2288K bss, 492340K reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vmalloc : 0xffffff8000000000 - 0xffffffba3fff0000   (   232 GB)
+[    0.000000]     vmemmap : 0xffffffba40000000 - 0xffffffbfc0000000   (    22 GB maximum)
+[    0.000000]               0xffffffba40000000 - 0xffffffba45800000   (    88 MB actual)
+[    0.000000]     PCI I/O : 0xffffffbffa000000 - 0xffffffbffb000000   (    16 MB)
+[    0.000000]     fixed   : 0xffffffbffbdfd000 - 0xffffffbffbdff000   (     8 KB)
+[    0.000000]     modules : 0xffffffbffc000000 - 0xffffffc000000000   (    64 MB)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc080000000   (  2048 MB)
+[    0.000000]       .init : 0xffffffc00163f000 - 0xffffffc001766000   (  1180 KB)
+[    0.000000]       .text : 0xffffffc000080000 - 0xffffffc00163e2f4   ( 22265 KB)
+[    0.000000]       .data : 0xffffffc001783000 - 0xffffffc001a55400   (  2889 KB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] HMP scheduling enabled.
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+[    0.000000] mpm_init_irq_domain(): Cannot find irq controller for qcom,gpio-parent
+[    0.000000] MPM 1 irq mapping errored -517
+[    0.000000] 	Offload RCU callbacks from all CPUs
+[    0.000000] 	Offload RCU callbacks from CPUs: 0-7.
+[    0.000000] Architected cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000006] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 3579139424256ns
+[    0.007996] Switched to clocksource arch_sys_counter
+[    0.014150] kmemleak: Kernel memory leak detector disabled
+[    0.018629] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+[    0.028956] pid_max: default: 32768 minimum: 301
+[    0.034079] Security Framework initialized
+[    0.037627] SELinux:  Initializing.
+[    0.041558] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.047817] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.058184] Initializing cgroup subsys freezer
+[    0.061687] Initializing cgroup subsys debug
+[    0.067522] /cpus/cpu@0: Missing clock-frequency property
+[    0.071939] /cpus/cpu@1: Missing clock-frequency property
+[    0.077273] /cpus/cpu@2: Missing clock-frequency property
+[    0.082683] /cpus/cpu@3: Missing clock-frequency property
+[    0.088064] /cpus/cpu@100: Missing clock-frequency property
+[    0.093598] /cpus/cpu@101: Missing clock-frequency property
+[    0.099180] /cpus/cpu@102: Missing clock-frequency property
+[    0.104715] /cpus/cpu@103: Missing clock-frequency property
+[    0.110340] hw perfevents: enabled with arm/armv8-pmuv3 PMU driver, 7 counters available
+[    0.118408] EFI services will not be available.
+[    0.123143] NOHZ: local_softirq_pending 02
+[    0.133399] 
+[    0.133399] **********************************************************
+[    0.140458] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.146878] **                                                      **
+[    0.153412] ** trace_printk() being used. Allocating extra memory.  **
+[    0.159919] **                                                      **
+[    0.166409] ** This means that this is a DEBUG kernel and it is     **
+[    0.172940] ** unsafe for produciton use.                           **
+[    0.179450] **                                                      **
+[    0.185940] ** If you see this message and you are not debugging    **
+[    0.192471] ** the kernel, report this immediately to your vendor!  **
+[    0.198981] **                                                      **
+[    0.205471] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.212003] **********************************************************
+[    0.251696] Core Debug Lock unlocked
+[    0.254886] MSM Memory Dump base table set up
+[    0.258725] MSM Memory Dump apps data table set up
+[    0.263402] Configuring XPU violations to be fatal errors
+[    0.271505] cpu_clock_pwr_init: Power clocks configured
+[    0.361213] Brought up 8 CPUs
+[    0.363148] SMP: Total of 8 processors activated.
+[    0.367927] alternatives: patching kernel code
+[    0.383284] DMI not present or invalid.
+[    0.550062] pinctrl core: initialized pinctrl subsystem
+[    0.557007] regulator-dummy: no parameters
+[    0.923362] NET: Registered protocol family 16
+[    0.938354] ------------[ cut here ]------------
+[    0.941944] WARNING: CPU: 0 PID: 1 at /home/yangbo/PROJ/benan_71_1120/kernel/msm-3.18/drivers/power/qcom/pm-boot.c:45 msm_pm_boot_init+0x90/0xd0()
+[    0.955067] Modules linked in:
+[    0.958107] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 3.18.31-ge52e75f-dirty #3
+[    0.965371] Hardware name: Qualcomm Technologies, Inc. SDM450 (DT)
+[    0.971535] Call trace:
+[    0.973974] [<ffffffc000089b14>] dump_backtrace+0x0/0x270
+[    0.979351] [<ffffffc000089d98>] show_stack+0x14/0x1c
+[    0.984389] [<ffffffc000e82990>] dump_stack+0x80/0xa4
+[    0.989423] [<ffffffc0000a32a0>] warn_slowpath_common+0x8c/0xb0
+[    0.995324] [<ffffffc0000a33dc>] warn_slowpath_null+0x18/0x20
+[    1.001053] [<ffffffc001683214>] msm_pm_boot_init+0x90/0xd0
+[    1.006607] [<ffffffc000082b38>] do_one_initcall+0x1a0/0x1bc
+[    1.012254] [<ffffffc00163fb38>] kernel_init_freeable+0x14c/0x1e8
+[    1.018327] [<ffffffc000e7bb38>] kernel_init+0x14/0xd8
+[    1.023513] ---[ end trace e2463446a6a3b457 ]---
+[    1.028097] scm_call failed: func id 0x42000101, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    1.038099] cpuidle: using governor ladder
+[    1.048103] cpuidle: using governor menu
+[    1.058099] cpuidle: using governor qcom
+[    1.063464] vdso: 2 pages (1 code @ ffffffc001789000, 1 data @ ffffffc001788000)
+[    1.077588] software IO TLB [mem 0xea800000-0xeac00000] (4MB) mapped at [ffffffc06a800000-ffffffc06abfffff]
+[    1.096884] DMA: preallocated 256 KiB pool for atomic allocations
+[    1.122080] IPA HW is not supported on this target
+[    1.125835] IPA HW is not supported on this target
+[    1.131215] ipa_usb ipa3_usb_init:2690 exit: IPA_USB init success!
+[    1.136771] IPA HW is not supported on this target
+[    1.141575] IPA HW is not supported on this target
+[    1.159239] platform soc:qcom,kgsl-hyp: assigned reserved memory node gpu_region@0
+[    1.246985] msm_mpm_dev_probe(): Cannot get clk resource for XO: -517
+[    1.266579] sps:sps is ready.
+[    1.272752] msm_thermal:vdd_restriction_reg_init Defer regulator vdd-dig probe
+[    1.279001] msm_thermal:probe_vdd_rstr Err regulator init. err:-517. KTM continues.
+[    1.286585] msm-thermal soc:qcom,msm-thermal: probe_vdd_rstr:Failed reading node=/soc/qcom,msm-thermal, key=qcom,max-freq-level. err=-517. KTM continues
+[    1.300237] msm_thermal:msm_thermal_dev_probe Failed reading node=/soc/qcom,msm-thermal, key=qcom,online-hotplug-core. err:-517
+[    1.317152] i2c-msm-v2 78b6000.i2c: could not find pctldev for node /soc/pinctrl@1000000/i2c_2/i2c_2_active, deferring probe
+[    1.328445] i2c-msm-v2 78b7000.i2c: could not find pctldev for node /soc/pinctrl@1000000/i2c_3/i2c_3_active, deferring probe
+[    1.339747] i2c-msm-v2 78b8000.i2c: could not find pctldev for node /soc/pinctrl@1000000/i2c_4/i2c_4_active, deferring probe
+[    1.350968] i2c-msm-v2 7af8000.i2c: could not find pctldev for node /soc/pinctrl@1000000/i2c_8/i2c_8_active, deferring probe
+[    1.366494] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Speed bin: 6 PVS Version: 0
+[    1.373417] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Get vdd-mx regulator!!!
+[    1.384399] msm_rpm_glink_dt_parse: qcom,rpm-glink compatible not matches
+[    1.390179] msm_rpm_dev_probe: APSS-RPM communication over SMD
+[    1.400483] smd_channel_probe_now: allocation table not initialized
+[    1.409355] smd_channel_probe_now: allocation table not initialized
+[    1.417461] smd_channel_probe_now: allocation table not initialized
+[    1.427384] msm_watchdog b017000.qcom,wdt: wdog absent resource not present
+[    1.434178] msm_watchdog b017000.qcom,wdt: MSM Watchdog Initialized
+[    1.443580] msm-jtag-fuse a601c.jtagfuse: JTag Fuse initialized
+[    1.467309] platform soc:qcom,adsprpc-mem: assigned reserved memory node adsp_region@0
+[    1.478554] irq: no irq domain found for /soc/pinctrl@1000000 !
+[    1.485255] spmi_pmic_arb 200f000.qcom,spmi: PMIC Arb Version-2 0x20010000
+[    1.504064] pm8953_s5: 400 <--> 1140 mV at 870 mV normal idle 
+[    1.510881] pm8953_s5_avs_limit: 400 <--> 1140 mV 
+[    1.515519] spm_regulator_probe: name=pm8953_s5, range=LV, voltage=870000 uV, mode=AUTO, step rate=1200 uV/us
+[    1.528684] platform 4080000.qcom,mss: assigned reserved memory node modem_region@0
+[    1.536598] platform c200000.qcom,lpass: assigned reserved memory node adsp_fw_region@0
+[    1.544447] platform 1de0000.qcom,venus: assigned reserved memory node venus_region@0
+[    1.553312] platform a21b000.qcom,pronto: assigned reserved memory node wcnss_fw_region@0
+[    1.569302] apc_mem_acc_corner: 0 <--> 0 mV 
+[    1.576228] cpr4_msm8953_apss_read_fuse_data: apc_corner: speed bin = 6
+[    1.581840] cpr4_msm8953_apss_read_fuse_data: apc_corner: CPR fusing revision = 3
+[    1.589289] cpr4_msm8953_apss_read_fuse_data: apc_corner: foundry id = 2
+[    1.595954] cpr4_msm8953_apss_read_fuse_data: apc_corner: CPR misc fuse value = 0
+[    1.603466] cpr4_msm8953_apss_read_fuse_data: apc_corner: Voltage boost fuse config = 0 boost = disable
+[    1.613131] cpr4_msm8953_apss_calculate_open_loop_voltages: apc_corner: fused   LowSVS: open-loop= 625000 uV
+[    1.622625] cpr4_msm8953_apss_calculate_open_loop_voltages: apc_corner: fused      SVS: open-loop= 700000 uV
+[    1.632429] cpr4_msm8953_apss_calculate_open_loop_voltages: apc_corner: fused      NOM: open-loop= 795000 uV
+[    1.642239] cpr4_msm8953_apss_calculate_open_loop_voltages: apc_corner: fused TURBO_L1: open-loop= 915000 uV
+[    1.652162] cpr4_msm8953_apss_calculate_target_quotients: apc_corner: fused   LowSVS: quot[ 7]= 464
+[    1.661080] cpr4_msm8953_apss_calculate_target_quotients: apc_corner: fused      SVS: quot[ 7]= 596, quot_offset[ 7]= 130
+[    1.672014] cpr4_msm8953_apss_calculate_target_quotients: apc_corner: fused      NOM: quot[ 7]= 790, quot_offset[ 7]= 190
+[    1.682952] cpr4_msm8953_apss_calculate_target_quotients: apc_corner: fused TURBO_L1: quot[ 7]=1031, quot_offset[ 7]= 240
+[    1.694456] cpr4_apss_init_aging: apc: sensor 6 aging init quotient diff = 11, aging RO scale = 2800 QUOT/V
+[    1.703985] cpr3_regulator_init_ctrl: apc: Default CPR mode = HW closed-loop
+[    1.711331] apc_corner: 0 <--> 0 mV at 0 mV 
+[    1.720812] gfx_mem_acc_corner: 0 <--> 0 mV 
+[    1.726176] GFX_LDO: msm_gfx_ldo_parse_dt: Unable to parse CX parameters rc=-517
+[    1.732560] GFX_LDO: msm_gfx_ldo_probe: Unable to pasrse dt rc=-517
+[    1.796199] __of_mpm_init(): MPM driver mapping exists
+[    1.804571] msm_mpm_dev_probe(): Cannot get clk resource for XO: -517
+[    1.810995] msm_thermal:sensor_mgr_init_threshold threshold id already initialized
+[    1.817702] msm_thermal:vdd_restriction_reg_init Defer regulator vdd-dig probe
+[    1.824816] msm_thermal:probe_vdd_rstr Err regulator init. err:-517. KTM continues.
+[    1.832406] msm-thermal soc:qcom,msm-thermal: probe_vdd_rstr:Failed reading node=/soc/qcom,msm-thermal, key=qcom,max-freq-level. err=-517. KTM continues
+[    1.846032] msm_thermal:msm_thermal_dev_probe Failed reading node=/soc/qcom,msm-thermal, key=qcom,online-hotplug-core. err:-517
+[    1.858737] i2c-msm-v2 78b6000.i2c: probing driver i2c-msm-v2
+[    1.863653] i2c-msm-v2 78b6000.i2c: error on clk_get(core_clk):-517
+[    1.869730] i2c-msm-v2 78b6000.i2c: error probe() failed with err:-517
+[    1.877285] i2c-msm-v2 78b7000.i2c: probing driver i2c-msm-v2
+[    1.882188] i2c-msm-v2 78b7000.i2c: error on clk_get(core_clk):-517
+[    1.888276] i2c-msm-v2 78b7000.i2c: error probe() failed with err:-517
+[    1.895806] i2c-msm-v2 78b8000.i2c: probing driver i2c-msm-v2
+[    1.900703] i2c-msm-v2 78b8000.i2c: error on clk_get(core_clk):-517
+[    1.906770] i2c-msm-v2 78b8000.i2c: error probe() failed with err:-517
+[    1.914430] i2c-msm-v2 7af8000.i2c: probing driver i2c-msm-v2
+[    1.919328] i2c-msm-v2 7af8000.i2c: error on clk_get(core_clk):-517
+[    1.925395] i2c-msm-v2 7af8000.i2c: error probe() failed with err:-517
+[    1.932738] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Speed bin: 6 PVS Version: 0
+[    1.939756] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Get vdd-mx regulator!!!
+[    1.947120] msm_rpm_glink_dt_parse: qcom,rpm-glink compatible not matches
+[    1.953636] msm_rpm_dev_probe: APSS-RPM communication over SMD
+[    1.962494] pm8953_s1: 870 <--> 1156 mV at 1000 mV normal idle 
+[    1.971194] pm8953_s2_level: 0 <--> 0 mV at 0 mV normal idle 
+[    1.978706] pm8953_s2_floor_level: 0 <--> 0 mV at 0 mV normal idle 
+[    1.986973] pm8953_s2_level_ao: 0 <--> 0 mV at 0 mV normal idle 
+[    1.995789] pm8953_s3: 1225 mV normal idle 
+[    2.002775] pm8953_s4: 1900 <--> 2050 mV at 1900 mV normal idle 
+[    2.011599] pm8953_s7_level: 0 <--> 0 mV at 0 mV normal idle 
+[    2.019278] pm8953_s7_level_ao: 0 <--> 0 mV at 0 mV normal idle 
+[    2.027051] pm8953_s7_level_so: 0 <--> 0 mV at 0 mV normal idle 
+[    2.035625] pm8953_l1: 1000 mV normal idle 
+[    2.042779] pm8953_l2: 975 <--> 1225 mV at 975 mV normal idle 
+[    2.051261] pm8953_l3: 925 mV normal idle 
+[    2.058359] pm8953_l5: 1800 mV normal idle 
+[    2.065257] pm8953_l6: 1800 mV normal idle 
+[    2.072258] pm8953_l7: 1800 <--> 1900 mV at 1800 mV normal idle 
+[    2.080121] pm8953_l7_ao: 1800 <--> 1900 mV at 1800 mV normal idle 
+[    2.089274] pm8953_l8: 2900 mV normal idle 
+[    2.096311] pm8953_l9: 3000 <--> 3300 mV at 3000 mV normal idle 
+[    2.105144] pm8953_l10: 2850 mV normal idle 
+[    2.112283] pm8953_l11: 2950 mV normal idle 
+[    2.119370] pm8953_l12: 1800 <--> 2950 mV at 1800 mV normal idle 
+[    2.128311] pm8953_l13: 3125 mV normal idle 
+[    2.135149] pm8953_l16: 1800 mV normal idle 
+[    2.142332] pm8953_l17: 2850 mV normal idle 
+[    2.149350] pm8953_l19: 1200 <--> 1350 mV at 1200 mV normal idle 
+[    2.158465] pm8953_l22: 2800 mV normal idle 
+[    2.165519] pm8953_l23: 975 <--> 1225 mV at 975 mV normal idle 
+[    2.172403] GFX_LDO: msm_gfx_ldo_voltage_init: LDO corner 1: target-volt = 580000 uV
+[    2.179137] GFX_LDO: msm_gfx_ldo_voltage_init: LDO corner 2: target-volt = 650000 uV
+[    2.186833] GFX_LDO: msm_gfx_ldo_voltage_init: LDO corner 3: target-volt = 720000 uV
+[    2.194601] GFX_LDO: msm_gfx_ldo_adjust_init_voltage: adjusted the open-loop voltage[1] 580000 -> 615000
+[    2.204041] GFX_LDO: msm_gfx_ldo_adjust_init_voltage: adjusted the open-loop voltage[2] 650000 -> 675000
+[    2.213510] GFX_LDO: msm_gfx_ldo_voltage_init: LDO-mode fuse disabled by default
+[    2.222204] msm_gfx_ldo: 0 <--> 0 mV at 0 mV 
+[    2.226955] msm_mpm_dev_probe(): Cannot get clk resource for XO: -517
+[    2.233441] msm_thermal:sensor_mgr_init_threshold threshold id already initialized
+[    2.241258] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.247093] msm_thermal:get_cpu_freq_plan_len Error reading CPU0 freq table len. error:-19
+[    2.255369] cpu cpu4: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.262217] msm_thermal:get_cpu_freq_plan_len Error reading CPU4 freq table len. error:-19
+[    2.270462] msm_thermal:vdd_restriction_reg_init Defer vdd rstr freq init.
+[    2.280231] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.286067] msm_thermal:get_cpu_freq_plan_len Error reading CPU0 freq table len. error:-19
+[    2.295272] i2c-msm-v2 78b6000.i2c: probing driver i2c-msm-v2
+[    2.300281] i2c-msm-v2 78b6000.i2c: error on clk_get(core_clk):-517
+[    2.306303] i2c-msm-v2 78b6000.i2c: error probe() failed with err:-517
+[    2.312856] cpu cpu4: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.314162] i2c-msm-v2 78b7000.i2c: probing driver i2c-msm-v2
+[    2.314350] i2c-msm-v2 78b7000.i2c: error on clk_get(core_clk):-517
+[    2.314366] i2c-msm-v2 78b7000.i2c: error probe() failed with err:-517
+[    2.315548] i2c-msm-v2 78b8000.i2c: probing driver i2c-msm-v2
+[    2.315726] i2c-msm-v2 78b8000.i2c: error on clk_get(core_clk):-517
+[    2.315740] i2c-msm-v2 78b8000.i2c: error probe() failed with err:-517
+[    2.316981] i2c-msm-v2 7af8000.i2c: probing driver i2c-msm-v2
+[    2.317158] i2c-msm-v2 7af8000.i2c: error on clk_get(core_clk):-517
+[    2.317173] i2c-msm-v2 7af8000.i2c: error probe() failed with err:-517
+[    2.375138] msm_thermal:get_cpu_freq_plan_len Error reading CPU4 freq table len. error:-19
+[    2.383413] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.390259] msm_thermal:get_cpu_freq_plan_len Error reading CPU0 freq table len. error:-19
+[    2.398513] cpu cpu4: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.405338] msm_thermal:get_cpu_freq_plan_len Error reading CPU4 freq table len. error:-19
+[    2.419539] ------------[ cut here ]------------
+[    2.423140] WARNING: CPU: 3 PID: 6 at /home/yangbo/PROJ/benan_71_1120/kernel/msm-3.18/drivers/clk/msm/clock-local2.c:1005 branch_clk_handoff+0xd8/0x120()
+[    2.436860] gcc_usb_phy_cfg_ahb_clk clock is enabled in HW even though ENABLE_BIT is not set
+[    2.445284] Modules linked in:
+[    2.448301] CPU: 3 PID: 6 Comm: kworker/u16:0 Tainted: G        W      3.18.31-ge52e75f-dirty #3
+[    2.457061] Hardware name: Qualcomm Technologies, Inc. SDM450 (DT)
+[    2.463235] Workqueue: deferwq deferred_probe_work_func
+[    2.468432] Call trace:
+[    2.470871] [<ffffffc000089b14>] dump_backtrace+0x0/0x270
+[    2.476249] [<ffffffc000089d98>] show_stack+0x14/0x1c
+[    2.481289] [<ffffffc000e82990>] dump_stack+0x80/0xa4
+[    2.486320] [<ffffffc0000a32a0>] warn_slowpath_common+0x8c/0xb0
+[    2.492222] [<ffffffc0000a3324>] warn_slowpath_fmt+0x60/0x80
+[    2.497865] [<ffffffc000b12fc8>] branch_clk_handoff+0xd8/0x120
+[    2.503681] [<ffffffc000b0ec24>] __handoff_clk+0xc8/0x2e8
+[    2.509062] [<ffffffc000b0efcc>] msm_clock_register+0x188/0x248
+[    2.514964] [<ffffffc000b0f114>] of_msm_clock_register+0x88/0x98
+[    2.520956] [<ffffffc000b286e8>] msm_gcc_probe+0x178/0x26c
+[    2.526424] [<ffffffc00059e1d0>] platform_drv_probe+0x38/0x84
+[    2.532152] [<ffffffc00059c47c>] driver_probe_device+0x164/0x370
+[    2.538140] [<ffffffc00059c6b4>] __device_attach+0x2c/0x4c
+[    2.543610] [<ffffffc00059a668>] bus_for_each_drv+0x7c/0xac
+[    2.549165] [<ffffffc00059c290>] device_attach+0x70/0x9c
+[    2.554460] [<ffffffc00059b758>] bus_probe_device+0x2c/0xa0
+[    2.560016] [<ffffffc00059bc84>] deferred_probe_work_func+0x98/0xc8
+[    2.566269] [<ffffffc0000ba04c>] process_one_work+0x254/0x444
+[    2.571997] [<ffffffc0000ba804>] worker_thread+0x2fc/0x418
+[    2.577465] [<ffffffc0000bea54>] kthread+0xf0/0xf8
+[    2.582257] ---[ end trace e2463446a6a3b458 ]---
+[    2.596260] qcom,gcc-8953 1800000.qcom,gcc: Registered GCC clocks
+[    2.601833] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Speed bin: 6 PVS Version: 0
+[    2.614051] cpr3_regulator_measure_aging: apc: average quotient delta=10 (count=10)
+[    2.620724] cpr3_regulator_aging_adjust: apc: aging measurement successful; aging reference adjustment voltage=0 uV
+[    2.636906] cpu-clock-8953 b114000.qcom,cpu-clock-8953: missing qcom,dfs-sid-c0
+[    2.643204] cpu-clock-8953 b114000.qcom,cpu-clock-8953: No DFS SID tables found for Cluster-0
+[    2.651705] cpu-clock-8953 b114000.qcom,cpu-clock-8953: missing qcom,link-sid-c0
+[    2.658442] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.658448] msm_thermal:get_cpu_freq_plan_len Error reading CPU0 freq table len. error:-19
+[    2.658457] cpu cpu4: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.658462] msm_thermal:get_cpu_freq_plan_len Error reading CPU4 freq table len. error:-19
+[    2.658469] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.658474] msm_thermal:get_cpu_freq_plan_len Error reading CPU0 freq table len. error:-19
+[    2.658481] cpu cpu4: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.658486] msm_thermal:get_cpu_freq_plan_len Error reading CPU4 freq table len. error:-19
+[    2.719497] cpu-clock-8953 b114000.qcom,cpu-clock-8953: No Link SID tables found for Cluster-0
+[    2.728092] cpu-clock-8953 b114000.qcom,cpu-clock-8953: missing qcom,lmh-sid-c0
+[    2.735363] cpu-clock-8953 b114000.qcom,cpu-clock-8953: No LMH SID tables found for Cluster-0
+[    2.743885] ramp_lmh_sid: Use Default LMH SID
+[    2.748225] ramp_dfs_sid: Use Default DFS SID
+[    2.752547] ramp_link_sid: Use Default Link SID
+[    2.757192] cpu-clock-8953 b114000.qcom,cpu-clock-8953: missing qcom,dfs-sid-c1
+[    2.764378] cpu-clock-8953 b114000.qcom,cpu-clock-8953: No DFS SID tables found for Cluster-1
+[    2.772883] cpu-clock-8953 b114000.qcom,cpu-clock-8953: missing qcom,link-sid-c1
+[    2.780260] cpu-clock-8953 b114000.qcom,cpu-clock-8953: No Link SID tables found for Cluster-1
+[    2.788856] cpu-clock-8953 b114000.qcom,cpu-clock-8953: missing qcom,lmh-sid-c1
+[    2.796127] cpu-clock-8953 b114000.qcom,cpu-clock-8953: No LMH SID tables found for Cluster-1
+[    2.804648] ramp_lmh_sid: Use Default LMH SID
+[    2.808991] ramp_dfs_sid: Use Default DFS SID
+[    2.813311] ramp_link_sid: Use Default Link SID
+[    2.818036] clock_rcgwr_init: RCGwR  Init Completed
+[    2.823889] populate_opp_table: clock-cpu-8953: OPP tables populated (cpu 3 and 7)
+[    2.830439] print_opp_table: clock_cpu: a53 C0: OPP voltage for 652800000: 1
+[    2.837445] print_opp_table: clock_cpu: a53 C0: OPP voltage for 1804800000: 5
+[    2.844581] print_opp_table: clock_cpu: a53 C1: OPP voltage for 652800000: 1
+[    2.851612] print_opp_table: clock_cpu: a53 C2: OPP voltage for 1804800000: 5
+[    2.861428] i2c-msm-v2 78b6000.i2c: probing driver i2c-msm-v2
+[    2.866393] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    2.875284] i2c-msm-v2 78b6000.i2c: msm_bus_scale_register_client(mstr-id:86):0 (not a problem)
+[    2.886879] kworker/u16:2 (101) used greatest stack depth: 13448 bytes left
+[    2.888720] i2c-msm-v2 78b7000.i2c: probing driver i2c-msm-v2
+[    2.888980] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+
+Format: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.BF.3.3-00228
+S - IMAGE_VARIANT_STRING=JAASANAZA
+S - OEM_IMAGE_VERSION_STRING=SKY-20160318BCD
+S - Boot Config, 0x000000e1
+B -       269 - PBL, Start
+B -      3107 - bootable_media_detect_entry, Start
+B -     74710 - bootable_media_detect_success, Start
+B -     74716 - elf_loader_entry, Start
+B -     76356 - auth_hash_seg_entry, Start
+B -     76636 - auth_hash_seg_exit, Start
+B -    105694 - elf_segs_hash_verify_entry, Start
+B -    233301 - PBL, End
+B -    244213 - SBL1, Start
+B -    299479 - pm_device_init, Start
+B -    302377 - PON REASON:PM0:0x200020001 
+B -    316803 - PM_SET_VAL:Skip
+D -     18544 - pm_device_init, Delta
+B -    318084 - usb: hs_phy_nondrive_start
+B -    320982 - usb: hs_phy_nondrive_finish
+B -    324428 - boot_flash_init, Start
+D -         0 - boot_flash_init, Delta
+B -    331413 - boot_config_data_table_init, Start
+D -      4300 - boot_config_data_table_init, Delta - (0 Bytes)
+B -    341447 - CDT version:3,Platform ID:8,Major ID:1,Minor ID:0,Subtype:0
+B -    348432 - sbl1_ddr_set_params, Start
+B -    352702 - cpr_init, Start
+D -      1067 - cpr_init, Delta
+B -    357612 - Pre_DDR_clock_init, Start
+D -       213 - Pre_DDR_clock_init, Delta
+D -         0 - sbl1_ddr_set_params, Delta
+B -    370300 - gs DRAM_TestMode call here 900020 
+
+B -    373564 - gs DRAM_TestMode call here 900020 
+
+B -    378200 - gs DRAM_TestMode call here 900020 
+
+B -    382836 - gs DRAM_TestMode call here 9000ff 
+
+B -    387380 - gs DRAM_TestMode call here 900001 
+
+B -    391986 - gs DRAM_TestMode call here 900001 
+
+B -    396622 - gs DRAM_TestMode call here 900001 
+
+B -    401166 - gs DRAM_TestMode call here 900000 
+
+B -    405802 - gs DRAM_TestMode call here 900000 
+
+B -    410408 - gs DRAM_TestMode call here 900010 
+
+B -    414952 - gs DRAM_TestMode call here 900004 
+
+B -    419588 - gs DRAM_TestMode call here 8900000 
+
+B -    424285 - gs DRAM_TestMode call here 900000 
+
+B -    428830 - gs DRAM_TestMode call here 900000 
+
+B -    433466 - gs DRAM_TestMode call here 8900000 
+
+B -    438193 - gs DRAM_TestMode call here 900020 
+
+B -    442707 - gs DRAM_TestMode call here 900040 
+
+B -    447343 - gs DRAM_TestMode call here 900000 
+
+B -    451979 - gs DRAM_TestMode call here 900000 
+
+B -    456524 - gs DRAM_TestMode call here 8900000 
+
+B -    461221 - gs DRAM_TestMode call here 900020 
+
+B -    465857 - gs DRAM_TestMode call here 900080 
+
+B -    470401 - gs DRAM_TestMode call here 900000 
+
+B -    475037 - gs DRAM_TestMode call here 900000 
+
+B -    479826 - do ddr sanity test, Start
+D -       335 - do ddr sanity test, Delta
+B -    487054 - pm_driver_init, Start
+B -    492544 - charger module absent, it's by design if using external charger
+D -      7076 - pm_driver_init, Delta
+B -    504409 - DDR Training restore, Start
+B -    506574 - DDR Training restore, End
+B -    516304 - clock_init, Start
+D -       183 - clock_init, Delta
+B -    516609 - Image Load, Start
+D -     83661 - QSEE Image Loaded, Delta - (1528936 Bytes)
+B -    600331 - Image Load, Start
+D -       335 - SEC Image Loaded, Delta - (2048 Bytes)
+B -    607682 - sbl1_efs_handle_cookies, Start
+D -       579 - sbl1_efs_handle_cookies, Delta
+B -    615429 - Image Load, Start
+D -     10888 - DEVCFG Image Loaded, Delta - (32372 Bytes)
+B -    626744 - Image Load, Start
+D -     18941 - RPM Image Loaded, Delta - (168980 Bytes)
+B -    645715 - Image Load, Start
+D -     50691 - APPSBL Image Loaded, Delta - (566960 Bytes)
+B -    696437 - QSEE Execution, Start
+D -        61 - QSEE Execution, Delta
+B -    702140 - USB D+ check, Start
+B -    707234 - usb:No PMI
+D -      2287 - USB D+ check, Delta
+B -    710955 - SBL1, End
+D -    469121 - SBL1, Delta
+S - Flash Throughput, 30000 KB/s  (2302392 Bytes,  74504 us)
+S - DDR Frequency, 931 MHz
+S - Core 0 Frequency, 800 MHz
+Android Bootloader - UART_DM Initialized!!!
+[0] welcome to lk
+
+[10] platform_init()
+[10] target_init()
+[30] SDHC Running in HS400 mode
+[30] Done initialization of the card
+[40] SPMI read command failure: 			cmd_id = 1, error = 2
+[40] pm8x41_get_is_cold_boot: Warm boot
+[50] SPMI read command failure: 			cmd_id = 1, error = 2
+[50] SPMI read command failure: 			cmd_id = 1, error = 2
+[60] SPMI read command failure: 			cmd_id = 1, error = 2
+[60] SPMI read command failure: 			cmd_id = 1, error = 2
+[70] SPMI read command failure: 			cmd_id = 1, error = 2
+[70] SPMI read command failure: 			cmd_id = 1, error = 2
+[80] SPMI read command failure: 			cmd_id = 1, error = 2
+[80] SPMI read command failure: 			cmd_id = 1, error = 2
+[90] SPMI read command failure: 			cmd_id = 1, error = 2
+[90] SPMI read command failure: 			cmd_id = 1, error = 2
+[100] SPMI read command failure: 			cmd_id = 1, error = 2
+[100] SPMI read command failure: 			cmd_id = 1, error = 2
+[110] SPMI read command failure: 			cmd_id = 1, error = 2
+[110] SPMI read command failure: 			cmd_id = 1, error = 2
+[120] SPMI read command failure: 			cmd_id = 1, error = 2
+[120] Qseecom Init Done in Appsbl
+[120] secure app region addr=0x85b00000 size=0x800000[130] TZ App region notif returned with status:0 addr:85b00000 size:8388608
+[140] TZ App log region register returned with status:0 addr:8f6a8000 size:4096
+[140] Qseecom TZ Init Done in Appsbl
+[150] Loading cmnlib done
+[160] qseecom_start_app: Loading app keymaster for the first time'
+[180] <8>keymaster: "\"KEYMASTER Init \""
+[180] Waiting for the RPM to populate smd channel table
+[190] Not able to search the panel:
+[190] panel_operating_mode=0x0
+[300] ERROR: Splash image header invalid
+[350] Config MIPI_VIDEO_PANEL.
+[370] SPMI read command failure: 			cmd_id = 1, error = 2
+[370] SPMI read command failure: 			cmd_id = 1, error = 2
+[570] Turn on MIPI_VIDEO_PANEL.
+[590] Video lane tested successfully
+[620] pm8x41_get_is_cold_boot: Warm boot
+[620] Unable to locate /bootselect partition
+[620] boot_verifier: Device is in ORANGE boot state.
+[630] Device is unlocked! Skipping verification...
+[630] Loading (boot) image (21991424): start
+[710] Loading (boot) image (21991424): done
+[710] use_signed_kernel=1, is_unlocked=1, is_tampered=0.
+[710] Your device has been unlocked and can't be trusted.
+Wait for 5 seconds before proceeding
+[720] LK SEC APP Handle: 0x1
+[720] <8>keymaster: "\"cmd_id=KEYMASTER_SET_ROT\""
+[730] LK SEC APP Handle: 0x1
+[730] <8>keymaster: "\"cmd_id=KEYMASTER_GET_VERSION\""
+[740] Authentication Key not yet programmed
+[740] <8>keymaster: "\"QSEE_STOR_RPMB_NOT_PROVISIONED\""
+[750] decompressing kernel image: start
+[1310] decompressing kernel image: done
+[1340] Best match DTB tags 338/00000008/0x00000000/0/10016/0/0/0/a0fdf528/346b3
+[1340] Using pmic info 0x10016/0x0/0x0/0x0 for device 0x10016/0x0/0x0/0x0
+[1350] display kernel cmdline: mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_nt35532_1080p_video:1:none:cfg:single_dsi
+[1360] cmdline: console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 buildvariant=userdebug androidbo[1380] Updating device tree: start
+[1520] Updating device tree: done
+[1520] Turn off MIPI_VIDEO_PANEL.
+[1530] Continuous splash enabled, keeping panel alive.
+[1530] <8>keymaster: "\"cmd_id=KEYMASTER_MILESTONE_CALL\""
+[1540] Qseecom De-Init Done in Appsbl
+[1540] Channel alloc freed
+[1550] booting linux @ 0x80080000, ramdisk @ 0x83600000 (2056315), tags/device tree @ 0x83400000
+[1550] Jumping to kernel via monitor
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.18.31-ge52e75f-dirty (yangbo@server-for-yangxi20191030) (gcc version 4.9 20150123 (prerelease) (GCC) ) #3 SMP PREEMPT Fri Nov 22 10:54:24 CST 2019
+[    0.000000] CPU: AArch64 Processor [410fd034] revision 4
+[    0.000000] alternatives: enabling workaround for ARM erratum 845719
+[    0.000000] Machine: Qualcomm Technologies, Inc. [    0.000000] Memory: 1566924K/2059264K available (14448K kernel code, 2889K rwdata, 7808K rodata, 1180K init, 2288K bss, 492340K reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vmalloc : 0xffffff8000000000 - 0xffffffba3fff0000   (   232 GB)
+[    0.000000]     vmemmap : 0xffffffba40000000 - 0xffffffbfc0000000   (    22 GB maximum)
+[    0.000000]               0xffffffba40000000 - 0xffffffba45800000   (    88 MB actual)
+[    0.000000]     PCI I/O : 0xffffffbffa000000 - 0xffffffbffb000000   (    16 MB)
+[    0.000000]     fixed   : 0xffffffbffbdfd000 - 0xffffffbffbdff000   (     8 KB)
+[    0.000000]     modules : 0xffffffbffc000000 - 0xffffffc000000000   (    64 MB)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc080000000   (  2048 MB)
+[    0.000000]       .init : 0xffffffc00163f000 - 0xffffffc001766000   (  1180 KB)
+[    0.000000]       .text : 0xffffffc000080000 - 0xffffffc00163e2f4   ( 22265 KB)
+[    0.000000]       .data : 0xffffffc001783000 - 0xffffffc001a55400   (  2889 KB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] HMP scheduling enabled.
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+[    0.000000] mpm_init_irq_domain(): Cannot find irq controller for qcom,gpio-parent
+[    0.000000] MPM 1 irq mapping errored -517
+[    0.000000] 	Offload RCU callbacks from all CPUs
+[    0.000000] 	Offload RCU callbacks from CPUs: 0-7.
+[    0.000000] Architected cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000006] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 3579139424256ns
+[    0.007995] Switched to clocksource arch_sys_counter
+[    0.014144] kmemleak: Kernel memory leak detector disabled
+[    0.018622] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+[    0.028950] pid_max: default: 32768 minimum: 301
+[    0.034076] Security Framework initialized
+[    0.037621] SELinux:  Initializing.
+[    0.041547] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.047811] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.058164] Initializing cgroup subsys freezer
+[    0.061668] Initializing cgroup subsys debug
+[    0.067500] /cpus/cpu@0: Missing clock-frequency property
+[    0.071919] /cpus/cpu@1: Missing clock-frequency property
+[    0.077250] /cpus/cpu@2: Missing clock-frequency property
+[    0.082660] /cpus/cpu@3: Missing clock-frequency property
+[    0.088042] /cpus/cpu@100: Missing clock-frequency property
+[    0.093577] /cpus/cpu@101: Missing clock-frequency property
+[    0.099157] /cpus/cpu@102: Missing clock-frequency property
+[    0.104693] /cpus/cpu@103: Missing clock-frequency property
+[    0.110318] hw perfevents: enabled with arm/armv8-pmuv3 PMU driver, 7 counters available
+[    0.118386] EFI services will not be available.
+[    0.123120] NOHZ: local_softirq_pending 02
+[    0.133371] 
+[    0.133371] **********************************************************
+[    0.140430] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.146849] **                                                      **
+[    0.153383] ** trace_printk() being used. Allocating extra memory.  **
+[    0.159891] **                                                      **
+[    0.166381] ** This means that this is a DEBUG kernel and it is     **
+[    0.172911] ** unsafe for produciton use.                           **
+[    0.179421] **                                                      **
+[    0.185911] ** If you see this message and you are not debugging    **
+[    0.192443] ** the kernel, report this immediately to your vendor!  **
+[    0.198952] **                                                      **
+[    0.205443] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.211973] **********************************************************
+[    0.251670] Core Debug Lock unlocked
+[    0.254873] MSM Memory Dump base table set up
+[    0.258703] MSM Memory Dump apps data table set up
+[    0.263377] Configuring XPU violations to be fatal errors
+[    0.271505] cpu_clock_pwr_init: Power clocks configured
+[    0.361248] Brought up 8 CPUs
+[    0.363183] SMP: Total of 8 processors activated.
+[    0.367960] alternatives: patching kernel code
+[    0.383317] DMI not present or invalid.
+[    0.547063] pinctrl core: initialized pinctrl subsystem
+[    0.554070] regulator-dummy: no parameters
+[    0.920454] NET: Registered protocol family 16
+[    0.935412] ------------[ cut here ]------------
+[    0.939042] WARNING: CPU: 0 PID: 1 at /home/yangbo/PROJ/benan_71_1120/kernel/msm-3.18/drivers/power/qcom/pm-boot.c:45 msm_pm_boot_init+0x90/0xd0()
+[    0.952121] Modules linked in:
+[    0.955145] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 3.18.31-ge52e75f-dirty #3
+[    0.962430] Hardware name: Qualcomm Technologies, Inc. SDM450 (DT)
+[    0.968593] Call trace:
+[    0.971033] [<ffffffc000089b14>] dump_backtrace+0x0/0x270
+[    0.976411] [<ffffffc000089d98>] show_stack+0x14/0x1c
+[    0.981449] [<ffffffc000e82990>] dump_stack+0x80/0xa4
+[    0.986481] [<ffffffc0000a32a0>] warn_slowpath_common+0x8c/0xb0
+[    0.992383] [<ffffffc0000a33dc>] warn_slowpath_null+0x18/0x20
+[    0.998113] [<ffffffc001683214>] msm_pm_boot_init+0x90/0xd0
+[    1.003666] [<ffffffc000082b38>] do_one_initcall+0x1a0/0x1bc
+[    1.009313] [<ffffffc00163fb38>] kernel_init_freeable+0x14c/0x1e8
+[    1.015385] [<ffffffc000e7bb38>] kernel_init+0x14/0xd8
+[    1.020573] ---[ end trace 774c5b9556a3aac1 ]---
+[    1.025135] scm_call failed: func id 0x42000101, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    1.038108] cpuidle: using governor ladder
+[    1.048099] cpuidle: using governor menu
+[    1.058099] cpuidle: using governor qcom
+[    1.063452] vdso: 2 pages (1 code @ ffffffc001789000, 1 data @ ffffffc001788000)
+[    1.077576] software IO TLB [mem 0xea800000-0xeac00000] (4MB) mapped at [ffffffc06a800000-ffffffc06abfffff]
+[    1.096875] DMA: preallocated 256 KiB pool for atomic allocations
+[    1.122046] IPA HW is not supported on this target
+[    1.125802] IPA HW is not supported on this target
+[    1.131179] ipa_usb ipa3_usb_init:2690 exit: IPA_USB init success!
+[    1.136738] IPA HW is not supported on this target
+[    1.141543] IPA HW is not supported on this target
+[    1.159204] platform soc:qcom,kgsl-hyp: assigned reserved memory node gpu_region@0
+[    1.246986] msm_mpm_dev_probe(): Cannot get clk resource for XO: -517
+[    1.266574] sps:sps is ready.
+[    1.272753] msm_thermal:vdd_restriction_reg_init Defer regulator vdd-dig probe
+[    1.279001] msm_thermal:probe_vdd_rstr Err regulator init. err:-517. KTM continues.
+[    1.286586] msm-thermal soc:qcom,msm-thermal: probe_vdd_rstr:Failed reading node=/soc/qcom,msm-thermal, key=qcom,max-freq-level. err=-517. KTM continues
+[    1.300239] msm_thermal:msm_thermal_dev_probe Failed reading node=/soc/qcom,msm-thermal, key=qcom,online-hotplug-core. err:-517
+[    1.317142] i2c-msm-v2 78b6000.i2c: could not find pctldev for node /soc/pinctrl@1000000/i2c_2/i2c_2_active, deferring probe
+[    1.328440] i2c-msm-v2 78b7000.i2c: could not find pctldev for node /soc/pinctrl@1000000/i2c_3/i2c_3_active, deferring probe
+[    1.339737] i2c-msm-v2 78b8000.i2c: could not find pctldev for node /soc/pinctrl@1000000/i2c_4/i2c_4_active, deferring probe
+[    1.350958] i2c-msm-v2 7af8000.i2c: could not find pctldev for node /soc/pinctrl@1000000/i2c_8/i2c_8_active, deferring probe
+[    1.366482] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Speed bin: 6 PVS Version: 0
+[    1.373402] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Get vdd-mx regulator!!!
+[    1.384380] msm_rpm_glink_dt_parse: qcom,rpm-glink compatible not matches
+[    1.390160] msm_rpm_dev_probe: APSS-RPM communication over SMD
+[    1.400451] smd_channel_probe_now: allocation table not initialized
+[    1.409329] smd_channel_probe_now: allocation table not initialized
+[    1.417432] smd_channel_probe_now: allocation table not initialized
+[    1.427344] msm_watchdog b017000.qcom,wdt: wdog absent resource not present
+[    1.434143] msm_watchdog b017000.qcom,wdt: MSM Watchdog Initialized
+[    1.443546] msm-jtag-fuse a601c.jtagfuse: JTag Fuse initialized
+[    1.467268] platform soc:qcom,adsprpc-mem: assigned reserved memory node adsp_region@0
+[    1.478496] irq: no irq domain found for /soc/pinctrl@1000000 !
+[    1.485202] spmi_pmic_arb 200f000.qcom,spmi: PMIC Arb Version-2 0x20010000
+[    1.504009] pm8953_s5: 400 <--> 1140 mV at 870 mV normal idle 
+[    1.510819] pm8953_s5_avs_limit: 400 <--> 1140 mV 
+[    1.515456] spm_regulator_probe: name=pm8953_s5, range=LV, voltage=870000 uV, mode=AUTO, step rate=1200 uV/us
+[    1.528629] platform 4080000.qcom,mss: assigned reserved memory node modem_region@0
+[    1.536545] platform c200000.qcom,lpass: assigned reserved memory node adsp_fw_region@0
+[    1.544400] platform 1de0000.qcom,venus: assigned reserved memory node venus_region@0
+[    1.553261] platform a21b000.qcom,pronto: assigned reserved memory node wcnss_fw_region@0
+[    1.569264] apc_mem_acc_corner: 0 <--> 0 mV 
+[    1.576207] cpr4_msm8953_apss_read_fuse_data: apc_corner: speed bin = 6
+[    1.581816] cpr4_msm8953_apss_read_fuse_data: apc_corner: CPR fusing revision = 3
+[    1.589268] cpr4_msm8953_apss_read_fuse_data: apc_corner: foundry id = 2
+[    1.595933] cpr4_msm8953_apss_read_fuse_data: apc_corner: CPR misc fuse value = 0
+[    1.603444] cpr4_msm8953_apss_read_fuse_data: apc_corner: Voltage boost fuse config = 0 boost = disable
+[    1.613110] cpr4_msm8953_apss_calculate_open_loop_voltages: apc_corner: fused   LowSVS: open-loop= 625000 uV
+[    1.622603] cpr4_msm8953_apss_calculate_open_loop_voltages: apc_corner: fused      SVS: open-loop= 700000 uV
+[    1.632409] cpr4_msm8953_apss_calculate_open_loop_voltages: apc_corner: fused      NOM: open-loop= 795000 uV
+[    1.642217] cpr4_msm8953_apss_calculate_open_loop_voltages: apc_corner: fused TURBO_L1: open-loop= 915000 uV
+[    1.652139] cpr4_msm8953_apss_calculate_target_quotients: apc_corner: fused   LowSVS: quot[ 7]= 464
+[    1.661058] cpr4_msm8953_apss_calculate_target_quotients: apc_corner: fused      SVS: quot[ 7]= 596, quot_offset[ 7]= 130
+[    1.671992] cpr4_msm8953_apss_calculate_target_quotients: apc_corner: fused      NOM: quot[ 7]= 790, quot_offset[ 7]= 190
+[    1.682930] cpr4_msm8953_apss_calculate_target_quotients: apc_corner: fused TURBO_L1: quot[ 7]=1031, quot_offset[ 7]= 240
+[    1.694435] cpr4_apss_init_aging: apc: sensor 6 aging init quotient diff = 11, aging RO scale = 2800 QUOT/V
+[    1.703962] cpr3_regulator_init_ctrl: apc: Default CPR mode = HW closed-loop
+[    1.711309] apc_corner: 0 <--> 0 mV at 0 mV 
+[    1.720778] gfx_mem_acc_corner: 0 <--> 0 mV 
+[    1.726152] GFX_LDO: msm_gfx_ldo_parse_dt: Unable to parse CX parameters rc=-517
+[    1.732536] GFX_LDO: msm_gfx_ldo_probe: Unable to pasrse dt rc=-517
+[    1.796189] __of_mpm_init(): MPM driver mapping exists
+[    1.804565] msm_mpm_dev_probe(): Cannot get clk resource for XO: -517
+[    1.811007] msm_thermal:sensor_mgr_init_threshold threshold id already initialized
+[    1.817713] msm_thermal:vdd_restriction_reg_init Defer regulator vdd-dig probe
+[    1.824825] msm_thermal:probe_vdd_rstr Err regulator init. err:-517. KTM continues.
+[    1.832415] msm-thermal soc:qcom,msm-thermal: probe_vdd_rstr:Failed reading node=/soc/qcom,msm-thermal, key=qcom,max-freq-level. err=-517. KTM continues
+[    1.846041] msm_thermal:msm_thermal_dev_probe Failed reading node=/soc/qcom,msm-thermal, key=qcom,online-hotplug-core. err:-517
+[    1.858746] i2c-msm-v2 78b6000.i2c: probing driver i2c-msm-v2
+[    1.863663] i2c-msm-v2 78b6000.i2c: error on clk_get(core_clk):-517
+[    1.869740] i2c-msm-v2 78b6000.i2c: error probe() failed with err:-517
+[    1.877292] i2c-msm-v2 78b7000.i2c: probing driver i2c-msm-v2
+[    1.882196] i2c-msm-v2 78b7000.i2c: error on clk_get(core_clk):-517
+[    1.888283] i2c-msm-v2 78b7000.i2c: error probe() failed with err:-517
+[    1.895817] i2c-msm-v2 78b8000.i2c: probing driver i2c-msm-v2
+[    1.900717] i2c-msm-v2 78b8000.i2c: error on clk_get(core_clk):-517
+[    1.906782] i2c-msm-v2 78b8000.i2c: error probe() failed with err:-517
+[    1.914443] i2c-msm-v2 7af8000.i2c: probing driver i2c-msm-v2
+[    1.919342] i2c-msm-v2 7af8000.i2c: error on clk_get(core_clk):-517
+[    1.925407] i2c-msm-v2 7af8000.i2c: error probe() failed with err:-517
+[    1.932752] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Speed bin: 6 PVS Version: 0
+[    1.939768] cpu-clock-8953 b114000.qcom,cpu-clock-8953: Get vdd-mx regulator!!!
+[    1.947134] msm_rpm_glink_dt_parse: qcom,rpm-glink compatible not matches
+[    1.953647] msm_rpm_dev_probe: APSS-RPM communication over SMD
+[    1.962532] pm8953_s1: 870 <--> 1156 mV at 1000 mV normal idle 
+[    1.971231] pm8953_s2_level: 0 <--> 0 mV at 0 mV normal idle 
+[    1.978753] pm8953_s2_floor_level: 0 <--> 0 mV at 0 mV normal idle 
+[    1.987018] pm8953_s2_level_ao: 0 <--> 0 mV at 0 mV normal idle 
+[    1.995836] pm8953_s3: 1225 mV normal idle 
+[    2.002817] pm8953_s4: 1900 <--> 2050 mV at 1900 mV normal idle 
+[    2.011641] pm8953_s7_level: 0 <--> 0 mV at 0 mV normal idle 
+[    2.019332] pm8953_s7_level_ao: 0 <--> 0 mV at 0 mV normal idle 
+[    2.027113] pm8953_s7_level_so: 0 <--> 0 mV at 0 mV normal idle 
+[    2.035685] pm8953_l1: 1000 mV normal idle 
+[    2.042834] pm8953_l2: 975 <--> 1225 mV at 975 mV normal idle 
+[    2.051314] pm8953_l3: 925 mV normal idle 
+[    2.058411] pm8953_l5: 1800 mV normal idle 
+[    2.065298] pm8953_l6: 1800 mV normal idle 
+[    2.072302] pm8953_l7: 1800 <--> 1900 mV at 1800 mV normal idle 
+[    2.080159] pm8953_l7_ao: 1800 <--> 1900 mV at 1800 mV normal idle 
+[    2.089309] pm8953_l8: 2900 mV normal idle 
+[    2.096352] pm8953_l9: 3000 <--> 3300 mV at 3000 mV normal idle 
+[    2.105183] pm8953_l10: 2850 mV normal idle 
+[    2.112335] pm8953_l11: 2950 mV normal idle 
+[    2.119435] pm8953_l12: 1800 <--> 2950 mV at 1800 mV normal idle 
+[    2.128383] pm8953_l13: 3125 mV normal idle 
+[    2.135220] pm8953_l16: 1800 mV normal idle 
+[    2.142410] pm8953_l17: 2850 mV normal idle 
+[    2.149425] pm8953_l19: 1200 <--> 1350 mV at 1200 mV normal idle 
+[    2.158551] pm8953_l22: 2800 mV normal idle 
+[    2.165615] pm8953_l23: 975 <--> 1225 mV at 975 mV normal idle 
+[    2.172498] GFX_LDO: msm_gfx_ldo_voltage_init: LDO corner 1: target-volt = 580000 uV
+[    2.179232] GFX_LDO: msm_gfx_ldo_voltage_init: LDO corner 2: target-volt = 650000 uV
+[    2.186926] GFX_LDO: msm_gfx_ldo_voltage_init: LDO corner 3: target-volt = 720000 uV
+[    2.194696] GFX_LDO: msm_gfx_ldo_adjust_init_voltage: adjusted the open-loop voltage[1] 580000 -> 615000
+[    2.204135] GFX_LDO: msm_gfx_ldo_adjust_init_voltage: adjusted the open-loop voltage[2] 650000 -> 675000
+[    2.213603] GFX_LDO: msm_gfx_ldo_voltage_init: LDO-mode fuse disabled by default
+[    2.222304] msm_gfx_ldo: 0 <--> 0 mV at 0 mV 
+[    2.227054] msm_mpm_dev_probe(): Cannot get clk resource for XO: -517
+[    2.233529] msm_thermal:sensor_mgr_init_threshold threshold id already initialized
+[    2.241347] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.247182] msm_thermal:get_cpu_freq_plan_len Error reading CPU0 freq table len. error:-19
+[    2.255459] cpu cpu4: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.262306] msm_thermal:get_cpu_freq_plan_len Error reading CPU4 freq table len. error:-19
+[    2.270552] msm_thermal:vdd_restriction_reg_init Defer vdd rstr freq init.
+[    2.280326] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.286164] msm_thermal:get_cpu_freq_plan_len Error reading CPU0 freq table len. error:-19
+[    2.288946] i2c-msm-v2 78b6000.i2c: probing driver i2c-msm-v2
+[    2.289158] i2c-msm-v2 78b6000.i2c: error on clk_get(core_clk):-517
+[    2.289174] i2c-msm-v2 78b6000.i2c: error probe() failed with err:-517
+[    2.290422] i2c-msm-v2 78b7000.i2c: probing driver i2c-msm-v2
+[    2.290605] i2c-msm-v2 78b7000.i2c: error on clk_get(core_clk):-517
+[    2.290620] i2c-msm-v2 78b7000.i2c: error probe() failed with err:-517
+[    2.291793] i2c-msm-v2 78b8000.i2c: probing driver i2c-msm-v2
+[    2.291972] i2c-msm-v2 78b8000.i2c: error on clk_get(core_clk):-517
+[    2.291987] i2c-msm-v2 78b8000.i2c: error probe() failed with err:-517
+[    2.293224] i2c-msm-v2 7af8000.i2c: probing driver i2c-msm-v2
+[    2.293400] i2c-msm-v2 7af8000.i2c: error on clk_get(core_clk):-517
+[    2.293415] i2c-msm-v2 7af8000.i2c: error probe() failed with err:-517
+[    2.368438] cpu cpu4: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.375227] msm_thermal:get_cpu_freq_plan_len Error reading CPU4 freq table len. error:-19
+[    2.383520] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    2.390356] msm_thermal:get_cpu_freq_plan_len Error reading CPU0 freq table len. error:-19
+[    2.395946] ------------[ cut here ]------------
+[    2.395971] WARNING: CPU: 0 PID: 6 at /home/yangbo/PROJ/benan_71_1120/kernel/msm-3.18/drivers/clk/msm/clock-local2.c:1005 branch_clk_handoff+0xd8/0x120()
+[    2.395976] gcc_usb_phy_cfg_ahb_clk clock is enabled in HW even though ENABLE_BIT is not set
+[    2.395993] Modules linked in:
+[    2.396003] CPU: 0 PID: 6 Comm: kwork
